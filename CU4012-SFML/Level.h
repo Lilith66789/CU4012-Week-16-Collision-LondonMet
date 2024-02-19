@@ -5,6 +5,8 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
+#include "Circle.h"
+#include "Framework/Collision.h"
 
 
 class Level : public BaseLevel{
@@ -18,5 +20,11 @@ public:
 
 private:
 	// Default variables for level class.
+	Circle ball1;
+	Circle ball2;
+
+	sf::Texture ballTex;
+
+
 
 };
