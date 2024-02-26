@@ -6,7 +6,10 @@
 #include <string>
 #include <iostream>
 #include "Circle.h"
+#include "Squares.h"
 #include "Framework/Collision.h"
+#include "Paddle1.h"
+#include "Paddle2.h"
 
 
 class Level : public BaseLevel{
@@ -23,8 +26,11 @@ private:
 	Circle ball1;
 	Circle ball2;
 
+	Squares CollisionSquare[2];
+
+	Paddle1 p1;
+	Paddle2 p2;
+
+
 	sf::Texture ballTex;
-
-
-
 };
